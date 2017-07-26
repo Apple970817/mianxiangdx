@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/bundle.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			*{
+				padding: 0;margin: 0;list-style: none;
+			}
+			.box{
+				width: 300px;height: 300px;border: 1px solid;margin-left: 100px;float: left;margin-top: 120px;
+			}
+			.box input{
+				width: 100px;height: 30px;float: left;
+			}
+			.box .active{
+				background: pink;color: whitesmoke;
+			}
+			.box ul li{
+				width: 300px;height: 270px;background: paleturquoise;font-size:100px;color:white;display:none;text-align: center;line-height: 270px;
+			}
+			.box .show{
+				display: block;
+			}
+			.box section{
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<!--选项卡一：普通版-->
+		<div class="box" id="box">
+			<section class="Tbox">
+				<input class="active" type="button" value="One" />
+				<input type="button" value="Two" />
+				<input type="button" value="Three" />
+			</section>
+			<ul>
+				<li class="show">111</li>
+				<li>222</li>
+				<li>333</li>
+			</ul>
+		</div>		
+		
+		<!--选项卡二：自动播放版-->
+		<div class="box" id="box2">
+			<section class="Tbox">
+				<input class="active" type="button" value="One" />
+				<input type="button" value="Two" />
+				<input type="button" value="Three" />
+			</section>
+			<ul>
+				<li class="show">111</li>
+				<li>222</li>
+				<li>333</li>
+			</ul>
+		</div>		
+		
+		<!--选项卡三：左右切换版-->
+		<div class="box" id="box3">
+			<section class="Tbox">
+				<input class="active" type="button" value="One" />
+				<input type="button" value="Two" />
+				<input type="button" value="Three" />
+			</section>
+			<ul>
+				<li class="show">111</li>
+				<li>222</li>
+				<li>333</li>
+			</ul>
+			<button>向左</button>
+			<button>向右</button>
+		</div>
+	</body>
+</html>
